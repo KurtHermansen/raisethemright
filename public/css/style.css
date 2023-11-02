@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Merriweather:wght@700&family=Old+Standard+TT:wght@700&display=swap");
+
+/* <!-- #a3a3a3 -->
+<!-- #52525b -->
+<!-- #18181b --> */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Merriweather", serif;
+}
+body {
+	font-family: "AR One Sans", sans-serif;
+}
+.backgroudimg {
+	background-image: url(/rthemr/app/views/images/brick-wall-fade.png);
+}
+header,
+footer {
+	background-color: #18181b;
+}
+.medium-gray {
+	background-color: #52525b;
+}
+
+.hidden {
+	display: none;
+}
+
+.hamburger {
+	padding: 15px 15px;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.3s;
+	user-select: none;
+}
+
+.hamburger-box,
+.hamburger-inner {
+	width: 40px;
+	height: 24px;
+	display: inline-block;
+}
+
+.hamburger-inner {
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transition: all 0.3s;
+}
+
+.hamburger--squeeze .hamburger-inner:before,
+.hamburger--squeeze .hamburger-inner:after {
+	content: "";
+	display: block;
+	background-color: #fff;
+}
+
+.hamburger--squeeze .hamburger-inner:before {
+	top: 10px;
+}
+
+.hamburger--squeeze .hamburger-inner:after {
+	bottom: 10px;
+}
+
+#menuBtn.active .hamburger-inner {
+	transform: rotate(45deg);
+}
+
+#menuBtn.active .hamburger-inner:before {
+	transform: rotate(90deg);
+	top: 0;
+}
+
+#menuBtn.active .hamburger-inner:after {
+	transform: rotate(90deg);
+	bottom: 0;
+}
