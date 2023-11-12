@@ -15,8 +15,35 @@ h6 {
 body {
 	font-family: "AR One Sans", sans-serif;
 }
+.valueImg {
+    background-image: url(/rthemr/app/views/images/jesus.png);
+    background-size: cover; /* This will make sure your image covers the entire element */
+    background-position: center; /* This centers the image in the element */
+    background-repeat: no-repeat; /* This stops the image from repeating */
+}
+.principleImg {
+    background-image: url(/rthemr/app/views/images/america.png);
+    background-size: cover; /* This will make sure your image covers the entire element */
+    background-position: center; /* This centers the image in the element */
+    background-repeat: no-repeat; /* This stops the image from repeating */
+}
+.characterImg {
+    background-image: url(/rthemr/app/views/images/Character.jpg);
+    background-size: cover; /* This will make sure your image covers the entire element */
+    background-position: center; /* This centers the image in the element */
+    background-repeat: no-repeat; /* This stops the image from repeating */
+}
 .backgroudimg {
 	background-image: url(/rthemr/app/views/images/brick-wall-fade.png);
+    background-size: cover; /* This will make sure your image covers the entire element */
+    background-position: center; /* This centers the image in the element */
+    background-repeat: no-repeat; /* This stops the image from repeating */
+}
+.welcomeimg {
+    background-image: url(/rthemr/app/views/images/hope.jpg);
+    background-size: cover; /* This will make sure your image covers the entire element */
+    background-position: center; /* This centers the image in the element */
+    background-repeat: no-repeat; /* This stops the image from repeating */
 }
 header,
 footer {

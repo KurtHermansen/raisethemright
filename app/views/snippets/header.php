@@ -26,11 +26,13 @@
                 <a href="contact" class="text-white">Contact</a>
             <?php else: ?>
                 <a href="/rthemr" class="text-white">Home</a>
+                <a href="welcome" class="text-white">Welcome</a>
+                <a href="foundations" class="text-white">Foundations</a>
                 <a href="about" class="text-white">About Us</a>
                 <a href="services" class="text-white">Store</a>
                 <a href="contact" class="text-white">Contact</a>
                 <a href="login" class="text-white">Login</a>
-                <a href="signup" class="text-white">Sign Up</a>
+                <a href="/login/google" class="text-white">Sign Up</a>
             <?php endif; ?>
         </nav>
 

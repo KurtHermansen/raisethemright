@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS `dbs12191674`.`user` (
   `userID` INT NOT NULL,
   `fname` VARCHAR(45) NULL,
   `lname` VARCHAR(45) NULL,
-  `username` VARCHAR(45) NULL,
+  `username` VARCHAR(150) NULL,
   `password` VARCHAR(45) NULL,
-  `email` VARCHAR(45) NULL,
+  `email` VARCHAR(150) NULL,
   PRIMARY KEY (`userID`));
 -- ENGINE = InnoDB;
 
@@ -34,8 +34,9 @@ CREATE TABLE IF NOT EXISTS `dbs12191674`.`user` (
 CREATE TABLE IF NOT EXISTS `dbs12191674`.`video` (
   `videoID` INT NOT NULL,
   `title` VARCHAR(45) NULL,
-  `description` VARCHAR(45) NULL,
-  `path` VARCHAR(45) NULL,
+  `description` VARCHAR(5000) NULL,
+  `path` VARCHAR(150) NULL,
+  `category` VARCHAR(45) NULL,
   PRIMARY KEY (`videoID`));
 -- ENGINE = InnoDB;
 
@@ -45,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `dbs12191674`.`video` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `dbs12191674`.`comments` (
   `commentsID` INT NOT NULL,
-  `commentText` VARCHAR(1000) NULL,
+  `commentText` VARCHAR(5000) NULL,
   `userID` INT NOT NULL,
   `videoID` INT NOT NULL,
   PRIMARY KEY (`commentsID`),
@@ -70,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `dbs12191674`.`comments` (
 CREATE TABLE IF NOT EXISTS `dbs12191674`.`task` (
   `taskID` INT NOT NULL,
   `title` VARCHAR(45) NULL,
-  `description` VARCHAR(250) NULL,
+  `description` VARCHAR(2000) NULL,
   `complete` TINYINT NULL,
   `userID` INT NOT NULL,
   `videoID` INT NOT NULL,

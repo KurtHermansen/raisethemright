@@ -1,5 +1,7 @@
 <?php
 
+require_once 'vendor/autoload.php';
+
 use Slim\Factory\AppFactory;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -7,13 +9,29 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 // Get the database connection file
 require_once $_SERVER['DOCUMENT_ROOT'] . '/rthemr/config/connection.php';
 
-require 'vendor/autoload.php';
-
 $app = AppFactory::create();
-
 $app->setBasePath('/rthemr');
 
 $pdo = createConnection();
+
+
+
+
+try {
+    $stmt = $pdo->query("SELECT quote, author FROM quotes ORDER BY RAND() LIMIT 1");
+    $quote = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Convert the result to JSON
+    $jsonQuote = json_encode($quote);
+
+    // Print a script tag to log this in the console
+    echo "<script>console.log('DB Result: ', $jsonQuote);</script>";
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+    // Optionally, log the error in the console as well
+    $errorMessage = json_encode($e->getMessage());
+    echo "<script>console.log('DB Error: ', $errorMessage);</script>";
+}
 
 $checkUserMiddleware = function (Request $request, $handler) use ($pdo) {
     // Start session if not started
@@ -73,6 +91,25 @@ $app->get('/', function (Request $request, Response $response, array $args) {
 $app->get('/about', function (Request $request, Response $response, array $args) {
     ob_start();
     include __DIR__ . '../app/views/about.php';
+    $output = ob_get_clean();
+    $response->getBody()->write($output);
+    return $response;
+});
+
+// welcome page route
+$app->get('/welcome', function (Request $request, Response $response, array $args) use ($quote) { // Use the $quote variable here
+    ob_start();
+    // Make $quote available in the scope of this callback
+    include __DIR__ . '../app/views/welcome.php';
+    $output = ob_get_clean();
+    $response->getBody()->write($output);
+    return $response;
+});
+
+// foundations Us page route
+$app->get('/foundations', function (Request $request, Response $response, array $args) {
+    ob_start();
+    include __DIR__ . '../app/views/foundations.php';
     $output = ob_get_clean();
     $response->getBody()->write($output);
     return $response;
