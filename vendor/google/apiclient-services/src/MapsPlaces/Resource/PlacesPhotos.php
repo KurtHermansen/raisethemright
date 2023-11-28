@@ -32,9 +32,12 @@ class PlacesPhotos extends \Google\Service\Resource
   /**
    * Get a photo media with a photo reference string. (photos.getMedia)
    *
-   * @param string $name Required. The resource name of a photo as returned in a
-   * Place object's photos.name field. Format:
-   * places/place_id/photos/photo_reference.
+   * @param string $name Required. The resource name of a photo media in the
+   * format: `"places/place_id/photos/photo_reference/media"`. The resource name
+   * of a photo as returned in a Place object's `photos.name` field comes with the
+   * format `"places/place_id/photos/photo_reference"`. You need to append
+   * `"/media"` at the end of the photo resource to get the photo media resource
+   * name.
    * @param array $optParams Optional parameters.
    *
    * @opt_param int maxHeightPx Optional. Specifies the maximum desired height, in
@@ -60,7 +63,7 @@ class PlacesPhotos extends \Google\Service\Resource
    * @opt_param bool skipHttpRedirect Optional. If set, skip the default HTTP
    * redirect behavior and render a text format (for example, in JSON format for
    * HTTP use case) response. If not set, an HTTP redirect will be issued to
-   * redirect the call to the image midea. This option is ignored for non-HTTP
+   * redirect the call to the image media. This option is ignored for non-HTTP
    * requests.
    * @return GoogleMapsPlacesV1PhotoMedia
    */

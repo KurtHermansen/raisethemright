@@ -13,83 +13,56 @@
         </section>
 
 
-        <section class=" py-16">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-8">Three Pillars to a Solid Foundation</h2>
+        <section class=" py-16 light-gray">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8 col-span-full">Three Pillars to a Solid Foundation</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="relative">
-                        <img src="/rthemr/app/views/images/jesus.png" alt="Jesus Image" class="w-300 h-250 mx-auto">
-                    </div>
-                    <div class="text-left">
-                        <h3 class="text-2xl font-bold mb-4">Religious Values</h3>
-                        <p class="text-gray-700 mb-4">The endeavor to instill a strong value base in children through the teachings of Christ is not merely about religious instruction; it is about equipping the next generation with a set of universal principles that can withstand the challenges of any era. These values—love, patience, kindness, forgiveness, and humility—are not exclusive to Christianity but are cornerstones in the foundation of a harmonious society. When children are taught to "love your neighbor as yourself," a commandment from Mark 12:31, they learn to extend beyond their own needs and consider the well-being of others, promoting a culture of altruism and understanding...</p>
-                        <a href="#" id="learnMoreLink" class="text-blue-500 hover:underline">Learn More</a>
+                <div class="grid grid-cols-1 gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 bg-white rounded-lg shadow-lg p-6">
+                        <div class="relative">
+                            <h3 class="text-2xl font-bold mb-4">Religious Values</h3>
+                            <img src="/rthemr/app/views/images/jesus.png" alt="Jesus Image" class="w-200 h-150 mx-auto">
+                        </div>
+                        <div class="text-left">
 
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="text-left">
-                        <h3 class="text-2xl font-bold mb-4">American Principles</h3>
-                        <p class="text-gray-700 mb-4">Inculcating the wisdom of the American Founding Principles into the education of children is a profound act of preparing them for the responsibilities of citizenship and leadership in a free society. These principles are not just historical artifacts; they are the very sinews that hold together the fabric of American democracy. By grounding children in the values of liberty, justice, and the pursuit of happiness, parents are fostering an appreciation for the delicate balance between freedom and responsibility. As James Madison, the Father of the Constitution, emphasized the importance of a well-instructed people to the endurance of democracy, imparting these principles is also to prepare the young to be such well-instructed and vigilant guardians of their own rights and the rights of others...</p>
-                        <a href="#" id="learnMoreLink" class="text-blue-500 hover:underline">Learn More</a>
-
-                    </div>
-                    <div class="relative principleImg">
-
-                    </div>
-
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="relative characterImg">
-
-                    </div>
-                    <div class="text-left">
-                        <h3 class="text-2xl font-bold mb-4">Moral Character</h3>
-                        <p class="text-gray-700 mb-4">Fostering strong moral character in children is essential, as it is the very essence of their future self. This character-building is a complex process that involves more than just teaching right from wrong; it is about cultivating an inner compass that guides them through life's myriad decisions and interactions. Renowned figures throughout history have espoused the virtues of character. For instance, Eleanor Roosevelt, a champion of human rights, said, "People grow through experience if they meet life honestly and courageously. This is how character is built." Her words resonate with the parental role in guiding children to face life with honesty and bravery, thereby shaping a resilient and robust moral fiber...</p>
-                        <a href="#" id="learnMoreLink" class="text-blue-500 hover:underline">Learn More</a>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-gray-100 py-16">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-8">Three Pillars to a Solid Foundation</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="valueImg rounded-lg shadow-lg">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-4">Religious Values</h3>
                             <p class="text-gray-700 mb-4">The endeavor to instill a strong value base in children through the teachings of Christ is not merely about religious instruction; it is about equipping the next generation with a set of universal principles that can withstand the challenges of any era. These values—love, patience, kindness, forgiveness, and humility—are not exclusive to Christianity but are cornerstones in the foundation of a harmonious society. When children are taught to "love your neighbor as yourself," a commandment from Mark 12:31, they learn to extend beyond their own needs and consider the well-being of others, promoting a culture of altruism and understanding...</p>
-                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
-                        </div>
-                    </div>
+                            <a href="/rthemr/values" id="values" class="text-blue-500 hover:underline">Learn More</a>
 
-                    <div class="principleImg rounded-lg shadow-lg">
-
-                        <div class="p-6">
-                            <a href="">
-                                <h3 class="text-xl font-bold mb-4">American Principles</h3>
-                                <p class="text-gray-700 mb-4">Inculcating the wisdom of the American Founding Principles into the education of children is a profound act of preparing them for the responsibilities of citizenship and leadership in a free society. These principles are not just historical artifacts; they are the very sinews that hold together the fabric of American democracy. By grounding children in the values of liberty, justice, and the pursuit of happiness, parents are fostering an appreciation for the delicate balance between freedom and responsibility. As James Madison, the Father of the Constitution, emphasized the importance of a well-instructed people to the endurance of democracy, imparting these principles is also to prepare the young to be such well-instructed and vigilant guardians of their own rights and the rights of others...</p>
-                                <a href="#" class="text-blue-500 hover:underline">Read More</a>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="characterImg rounded-lg shadow-lg">
-
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-4">Moral Character</h3>
-                            <p class="text-gray-700 mb-4">Fostering strong moral character in children is essential, as it is the very essence of their future self. This character-building is a complex process that involves more than just teaching right from wrong; it is about cultivating an inner compass that guides them through life's myriad decisions and interactions. Renowned figures throughout history have espoused the virtues of character. For instance, Eleanor Roosevelt, a champion of human rights, said, "People grow through experience if they meet life honestly and courageously. This is how character is built." Her words resonate with the parental role in guiding children to face life with honesty and bravery, thereby shaping a resilient and robust moral fiber...</p>
-                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
                         </div>
                     </div>
                 </div>
+                <div class="grid grid-cols-1 gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 bg-white rounded-lg shadow-lg p-6">
+                        <div class="text-left">
+                            <h3 class="text-2xl font-bold mb-4">American Principles</h3>
+                            <p class="text-gray-700 mb-4">Inculcating the wisdom of the American Founding Principles into the education of children is a profound act of preparing them for the responsibilities of citizenship and leadership in a free society. These principles are not just historical artifacts; they are the very sinews that hold together the fabric of American democracy. By grounding children in the values of liberty, justice, and the pursuit of happiness, parents are fostering an appreciation for the delicate balance between freedom and responsibility. As James Madison, the Father of the Constitution, emphasized the importance of a well-instructed people to the endurance of democracy, imparting these principles is also to prepare the young to be such well-instructed and vigilant guardians of their own rights and the rights of others...</p>
+                            <a href="/rthemr/principles" id="principles" class="text-blue-500 hover:underline">Learn More</a>
+
+                        </div>
+                        <div class="relative">
+                            <img src="/rthemr/app/views/images/america.png" alt="american flag on stone wall" class="w-200 h-150 mx-auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-8">                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 bg-white rounded-lg shadow-lg p-6">
+                        <div class="relative">
+                            <h3 class="text-2xl font-bold mb-4">Moral Character</h3>
+                            <img src="/rthemr/app/views/images/Character.jpg" alt="Sculptor working on a self portrait" class="w-200 h-150 mx-auto">
+                        </div>
+                        <div class="text-left">
+
+                            <p class="text-gray-700 mb-4">Fostering strong moral character in children is essential, as it is the very essence of their future self. This character-building is a complex process that involves more than just teaching right from wrong; it is about cultivating an inner compass that guides them through life's myriad decisions and interactions. Renowned figures throughout history have espoused the virtues of character. For instance, Eleanor Roosevelt, a champion of human rights, said, "People grow through experience if they meet life honestly and courageously. This is how character is built." Her words resonate with the parental role in guiding children to face life with honesty and bravery, thereby shaping a resilient and robust moral fiber...</p>
+                            <a href="/rthemr/character" id="character" class="text-blue-500 hover:underline">Learn More</a>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
             </div>
         </section>
-
 
 
         <section class="bg-gray-300 py-16">
@@ -120,7 +93,7 @@
             <div class="container mx-auto text-center">
                 <h2 class="text-4xl font-bold mb-8">Testimonials</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
                     <div class="bg-white rounded-lg shadow-lg p-6">
                         <div class="mb-4">
                             <img src="/rthemr/app/views/images/john.jpg" alt="Client 1" class="w-20 h-30 mx-auto rounded-full mb-4">

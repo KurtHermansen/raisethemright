@@ -13,10 +13,10 @@ CREATE TABLE IF NOT EXISTS `dbs12191674`.`user` (
   `username` VARCHAR(150) NULL,
   `password` VARCHAR(45) NULL,
   `email` VARCHAR(150) NULL,
+  `login` tinyint(1) NOT NULL DEFAULT 0,
+  `paid` tinyint(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`userID`))
   AUTO_INCREMENT = 1000;
-
-
 
 -- -----------------------------------------------------
 -- Table `dbs12191674`.`video`
@@ -30,6 +30,39 @@ CREATE TABLE IF NOT EXISTS `dbs12191674`.`video` (
   `category` VARCHAR(45) NULL,
   PRIMARY KEY (`videoID`))
 AUTO_INCREMENT = 1000;
+
+-- -----------------------------------------------------
+-- Table `dbs12191674`.`forum`
+-- -----------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `dbs12191674`.`forum` (
+  `forumID` INT NOT NULL AUTO_INCREMENT,
+  `topic` VARCHAR(45) NULL,
+  PRIMARY KEY (`forumID`))
+AUTO_INCREMENT = 1000;
+
+-- -----------------------------------------------------
+-- Table `dbs12191674`.`forumcomments`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dbs12191674`.`forumcomments` (
+  `forumcommentsID` INT NOT NULL AUTO_INCREMENT,
+  `forumcommentText` VARCHAR(5000) NULL,
+  `userID` INT NOT NULL,
+  `forumID` INT NOT NULL,
+  PRIMARY KEY (`forumcommentsID`),
+  INDEX `fk_forumcomments_user_idx` (`userID` ASC),
+  INDEX `fk_forumcomments_forum1_idx` (`forumID` ASC),
+  CONSTRAINT `fk_forumcomments_user`
+    FOREIGN KEY (`userID`)
+    REFERENCES `dbs12191674`.`user` (`userID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_forumcomments_forum1`
+    FOREIGN KEY (`forumID`)
+    REFERENCES `dbs12191674`.`forum` (`forumID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
 
 -- -----------------------------------------------------
 -- Table `dbs12191674`.`quote`
@@ -167,3 +200,41 @@ INSERT INTO video (title, description, path, category) VALUES
 ('Persistence', 'Persistence is the firm continuance in a course of action in spite of difficulty or opposition. It is the twin of perseverance but emphasizes the active continuation of action against obstacles. Persistence is often the determining factor between an unfinished attempt and a successful endeavor.', 'app/video/Persistence', 'character'),
 ('Reliability', 'Reliability is the quality of being trustworthy and performing consistently well. It is the trait of being dependable, which is essential in forming strong interpersonal and professional relationships. A reliable individual is one who can be counted on to keep their word and fulfill their commitments.', 'app/video/Reliability', 'character'),
 ('Resilience', 'Resilience is the toughness and the ability to recover quickly from difficulties. It is the elasticity of character that enables individuals to bounce back from failure, adversity, or trauma. Resilience does not eliminate stress or erase life''s difficulties, but it provides the strength to tackle problems head-on, overcome adversity, and move on with life.', 'app/video/Resilience', 'character');
+INSERT INTO forum (forumID, topic) VALUES
+(DEFAULT, "Religious Values"),
+(DEFAULT, "Love"),
+(DEFAULT, "Faith"),
+(DEFAULT, "Hope"),
+(DEFAULT, "Charity/Service"),
+(DEFAULT, "Mercy"),
+(DEFAULT, "Obedience"),
+(DEFAULT, "Honesty"),
+(DEFAULT, "Forgiveness"),
+(DEFAULT, "Gratitude"),
+(DEFAULT, "Purity"),
+(DEFAULT, "Generosity"),
+(DEFAULT, "Humility"),
+(DEFAULT, "American Principals"),
+(DEFAULT, "Liberty/Freedom"),
+(DEFAULT, "Responsibility"),
+(DEFAULT, "Prosperity"),
+(DEFAULT, "Independents"),
+(DEFAULT, "Opportunity"),
+(DEFAULT, "Equality"),
+(DEFAULT, "Civic Duty"),
+(DEFAULT, "Self-Reliance"),
+(DEFAULT, "Justice"),
+(DEFAULT, "Frugality"),
+(DEFAULT, "Moral Character"),
+(DEFAULT, "Ambition"),
+(DEFAULT, "Assertive"),
+(DEFAULT, "Confidence"),
+(DEFAULT, "Consistency"),
+(DEFAULT, "Courage"),
+(DEFAULT, "Determination"),
+(DEFAULT, "Discipline"),
+(DEFAULT, "Patience"),
+(DEFAULT, "perseverance"),
+(DEFAULT, "Persistence"),
+(DEFAULT, "Reliability"),
+(DEFAULT, "Resilience");

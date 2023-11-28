@@ -20,6 +20,8 @@ namespace Google\Service\Integrations;
 class GoogleCloudIntegrationsV1alphaExecution extends \Google\Collection
 {
   protected $collection_key = 'responseParams';
+  protected $cloudLoggingDetailsType = GoogleCloudIntegrationsV1alphaCloudLoggingDetails::class;
+  protected $cloudLoggingDetailsDataType = '';
   /**
    * @var string
    */
@@ -34,6 +36,10 @@ class GoogleCloudIntegrationsV1alphaExecution extends \Google\Collection
    * @var string
    */
   public $executionMethod;
+  /**
+   * @var string
+   */
+  public $integrationVersionState;
   /**
    * @var string
    */
@@ -55,6 +61,20 @@ class GoogleCloudIntegrationsV1alphaExecution extends \Google\Collection
    */
   public $updateTime;
 
+  /**
+   * @param GoogleCloudIntegrationsV1alphaCloudLoggingDetails
+   */
+  public function setCloudLoggingDetails(GoogleCloudIntegrationsV1alphaCloudLoggingDetails $cloudLoggingDetails)
+  {
+    $this->cloudLoggingDetails = $cloudLoggingDetails;
+  }
+  /**
+   * @return GoogleCloudIntegrationsV1alphaCloudLoggingDetails
+   */
+  public function getCloudLoggingDetails()
+  {
+    return $this->cloudLoggingDetails;
+  }
   /**
    * @param string
    */
@@ -124,6 +144,20 @@ class GoogleCloudIntegrationsV1alphaExecution extends \Google\Collection
   public function getExecutionMethod()
   {
     return $this->executionMethod;
+  }
+  /**
+   * @param string
+   */
+  public function setIntegrationVersionState($integrationVersionState)
+  {
+    $this->integrationVersionState = $integrationVersionState;
+  }
+  /**
+   * @return string
+   */
+  public function getIntegrationVersionState()
+  {
+    return $this->integrationVersionState;
   }
   /**
    * @param string

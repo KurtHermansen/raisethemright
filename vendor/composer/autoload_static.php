@@ -25,6 +25,7 @@ class ComposerStaticInitd8ee54f8dc2ca69fc19cc545c7a5c666
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
+            'Stripe\\' => 7,
             'Slim\\Psr7\\' => 10,
             'Slim\\' => 5,
         ),
@@ -67,6 +68,10 @@ class ComposerStaticInitd8ee54f8dc2ca69fc19cc545c7a5c666
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
+        ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
         'Slim\\Psr7\\' => 
         array (

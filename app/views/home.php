@@ -14,8 +14,8 @@ error_reporting(E_ALL);
 
     <main>
         <section class="backgroudimg bg-cover bg-center bg-gray-700 text-white text-center py-32 relative">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="absolute inset-0 z-10 flex flex-col justify-center items-center">
+            <div class="bg-black opacity-50"></div>
+            <div class="flex flex-col justify-center items-center">
                 <h2 class="text-4xl font-bold mb-4">Start Building your Child's</h2>
                 <h2 class="text-4xl font-bold mb-4">Strong Moral Foundation Today</h2>
                 <p class="text-lg mb-8">"The strength of a nation derives from the integrity of the home."<br>- Confucius</p>
@@ -59,18 +59,6 @@ error_reporting(E_ALL);
                     </div>
                 </div>
             </section>
-
-        <script>
-            function playPause() {
-                var video = document.getElementById("featuredVideo");
-                if (video.paused) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            }
-        </script>
-
 
     </main>
     <?php include __DIR__ . '../snippets/footer.php'; ?>

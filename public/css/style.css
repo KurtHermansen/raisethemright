@@ -49,14 +49,45 @@ header,
 footer {
 	background-color: #18181b;
 }
+.light-gray {
+    background-color: #a3a3a3;
+}
 .medium-gray {
 	background-color: #52525b;
 }
 
-.hidden {
-	display: none;
+/* Base styles for the header */
+header {
+    background-color: #333; /* Adjust the color as needed */
 }
 
+
+/* Styling for the hamburger menu */
+#menuBtn {
+    font-size: 24px; /* Adjust the size as needed */
+    cursor: pointer;
+}
+
+/* Styles for the navigation links */
+#navLinks a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hidden {
+        display: none !important;
+    }
+    /* Full-width header elements when menu is open */
+    .header-expanded {
+        width: 100%;
+    }
+}
+
+/* 
 .hamburger {
 	padding: 15px 15px;
 	display: inline-block;
@@ -107,4 +138,4 @@ footer {
 #menuBtn.active .hamburger-inner:after {
 	transform: rotate(90deg);
 	bottom: 0;
-}
+} */
