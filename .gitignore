@@ -1,3 +1,4 @@
 connection.php
 ioinosConnection.php
-
+/config
+.env

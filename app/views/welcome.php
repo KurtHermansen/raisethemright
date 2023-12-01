@@ -1,5 +1,4 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/rthemr/app/views/snippets/meta.php'; ?>
-
 <body>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/rthemr/app/views/snippets/header.php'; ?>
 
@@ -26,7 +25,7 @@
                         <div class="text-left">
 
                             <p class="text-gray-700 mb-4">The endeavor to instill a strong value base in children through the teachings of Christ is not merely about religious instruction; it is about equipping the next generation with a set of universal principles that can withstand the challenges of any era. These values—love, patience, kindness, forgiveness, and humility—are not exclusive to Christianity but are cornerstones in the foundation of a harmonious society. When children are taught to "love your neighbor as yourself," a commandment from Mark 12:31, they learn to extend beyond their own needs and consider the well-being of others, promoting a culture of altruism and understanding...</p>
-                            <a href="/rthemr/values" id="values" class="text-blue-500 hover:underline">Learn More</a>
+                            <a href="/rthemr/values" id="values" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">View Content</a>
 
                         </div>
                     </div>
@@ -36,7 +35,7 @@
                         <div class="text-left">
                             <h3 class="text-2xl font-bold mb-4">American Principles</h3>
                             <p class="text-gray-700 mb-4">Inculcating the wisdom of the American Founding Principles into the education of children is a profound act of preparing them for the responsibilities of citizenship and leadership in a free society. These principles are not just historical artifacts; they are the very sinews that hold together the fabric of American democracy. By grounding children in the values of liberty, justice, and the pursuit of happiness, parents are fostering an appreciation for the delicate balance between freedom and responsibility. As James Madison, the Father of the Constitution, emphasized the importance of a well-instructed people to the endurance of democracy, imparting these principles is also to prepare the young to be such well-instructed and vigilant guardians of their own rights and the rights of others...</p>
-                            <a href="/rthemr/principles" id="principles" class="text-blue-500 hover:underline">Learn More</a>
+                            <a href="/rthemr/principles" id="principles" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">View Content</a>
 
                         </div>
                         <div class="relative">
@@ -53,7 +52,7 @@
                         <div class="text-left">
 
                             <p class="text-gray-700 mb-4">Fostering strong moral character in children is essential, as it is the very essence of their future self. This character-building is a complex process that involves more than just teaching right from wrong; it is about cultivating an inner compass that guides them through life's myriad decisions and interactions. Renowned figures throughout history have espoused the virtues of character. For instance, Eleanor Roosevelt, a champion of human rights, said, "People grow through experience if they meet life honestly and courageously. This is how character is built." Her words resonate with the parental role in guiding children to face life with honesty and bravery, thereby shaping a resilient and robust moral fiber...</p>
-                            <a href="/rthemr/character" id="character" class="text-blue-500 hover:underline">Learn More</a>
+                            <a href="/rthemr/character" id="character" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">View Content</a>
 
                         </div>
                     </div>

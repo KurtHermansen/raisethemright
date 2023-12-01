@@ -2,13 +2,13 @@
     <footer class="text-white py-8">
         <div class="container mx-auto flex justify-between items-center">
             <div>
-                <h2 class="text-2xl font-bold mb-2"><a href="#" class="text-blue-500">Contact Us</a></h2>
+                <h2 class="text-2xl font-bold mb-2"><a href="contact" class="text-blue-500">Contact Us</a></h2>
                 <p class="text-sm">Have questions? Contact us and we'll get back to you as soon as possible.</p>
             </div>
             <div class="flex items-center space-x-4">
-                <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" class="text-white"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="text-white"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
             </div>

@@ -20,7 +20,7 @@
                 <a href="login" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline inline-block">
                     Google OAuth
                 </a>
-                <form method="post" action="/login-user">
+                <form method="post" action="login-user">
                     <h2 class="text-2xl font-bold mb-8 text-gray-800">or</h2>
 
                     <!-- Email -->

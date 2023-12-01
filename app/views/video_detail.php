@@ -28,7 +28,7 @@
                     <!-- Comment Section -->
                     <div class="mt-6">
                         <h3 class="text-xl font-semibold mb-2">Add a Comment</h3>
-                        <form method="post" action="submit-comment">
+                        <form method="post" action="/rthemr/submit-videocomment">
                             <textarea class="w-full p-2 border border-gray-300 rounded-md" name="commentText" placeholder="Your comment here"></textarea>
                             <input type="hidden" name="videoID" value="<?= $video['videoID'] ?>">
                             <button type="submit" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Post Comment</button>

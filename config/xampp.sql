@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `dbs12191674`.`user` (
   `fname` VARCHAR(45) NULL,
   `lname` VARCHAR(45) NULL,
   `username` VARCHAR(150) NULL,
-  `password` VARCHAR(45) NULL,
+  `password` VARCHAR(150) NULL,
   `email` VARCHAR(150) NULL,
   `login` tinyint(1) NOT NULL DEFAULT 0,
   `paid` tinyint(1) NOT NULL DEFAULT 0,

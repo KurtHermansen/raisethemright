@@ -19,7 +19,7 @@ error_reporting(E_ALL);
                 <h2 class="text-4xl font-bold mb-4">Start Building your Child's</h2>
                 <h2 class="text-4xl font-bold mb-4">Strong Moral Foundation Today</h2>
                 <p class="text-lg mb-8">"The strength of a nation derives from the integrity of the home."<br>- Confucius</p>
-                <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Sign Up</a>
+                <a href="signup" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Sign Up</a>
             </div>
         </section>
 
